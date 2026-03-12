@@ -2,23 +2,23 @@
 flowchart TD
     A([Start]) --> B[Input jumlah data n]
     B --> C[Input semua nilai ke array]
-    C --> D[Set max = data[0]]
-    D --> E[Set min = data[0]]
-    E --> F[i = 1]
+    C --> D[Set max = data0]
+    D --> E[Set min = data0]
+    E --> F[Set i = 1]
 
-    F --> G{i < n ?}
+    F --> G{Apakah i < n}
 
-    G -->|Yes| H{data[i] > max?}
-    H -->|Yes| I[max = data[i]]
-    H -->|No| J{data[i] < min?}
+    G -->|Ya| H{Apakah data_i > max}
+    H -->|Ya| I[Set max = data_i]
+    H -->|Tidak| J{Apakah data_i < min}
 
     I --> J
-    J -->|Yes| K[min = data[i]]
-    J -->|No| L[i = i + 1]
+    J -->|Ya| K[Set min = data_i]
+    J -->|Tidak| L[Tambah i = i + 1]
 
     K --> L
     L --> G
 
-    G -->|No| M[Output max dan min]
+    G -->|Tidak| M[Tampilkan max dan min]
     M --> N([End])
 ```
