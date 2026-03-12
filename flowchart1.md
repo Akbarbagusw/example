@@ -21,3 +21,4 @@ flowchart TD
 
     G -->|No| M[Output max dan min]
     M --> N([End])
+```
