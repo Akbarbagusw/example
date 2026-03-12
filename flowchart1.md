@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A([Start]) --> B[Input jumlah data n]
     B --> C[Input semua nilai ke array]
